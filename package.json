@@ -3,7 +3,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node puppeteer_server_imgur.js",
-    "build": "npx puppeteer browsers install chromium@latest"
+    "build": "npm install puppeteer@latest"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
