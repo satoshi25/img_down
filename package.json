@@ -3,7 +3,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node puppeteer_server_imgur.js",
-    "build": "npx puppeteer browsers install chrome"
+    "build": "apt-get update && apt-get install -y chromium-browser && npx puppeteer browsers install chromium"
   },
   "dependencies": {
     "dotenv": "^16.5.0",

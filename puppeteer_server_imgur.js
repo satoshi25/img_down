@@ -34,14 +34,15 @@ app.post('/upload-image', async (req, res) => {
     // const page = await browser.newPage();
     const browser = await puppeteer.launch({
       headless: 'new',
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/opt/render/.cache/puppeteer/chrome/linux-137.0.7151.70/chrome-linux64/chrome',
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage',
         '--disable-accelerated-2d-canvas',
-        '--disable-gpu'
-      ]
+        '--disable-gpu',
+        '--single-process'
+      ],
+      ignoreDefaultArgs: ['--disable-extensions']
     });
       
       const page = await browser.newPage();
