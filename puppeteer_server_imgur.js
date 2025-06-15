@@ -42,7 +42,8 @@ app.post('/upload-image', async (req, res) => {
         '--disable-gpu',
         '--single-process'
       ],
-      ignoreDefaultArgs: ['--disable-extensions']
+      ignoreDefaultArgs: ['--disable-extensions'],
+      product: 'chrome'
     });
       
       const page = await browser.newPage();
