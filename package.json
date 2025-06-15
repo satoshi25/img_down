@@ -1,4 +1,9 @@
 {
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node puppeteer_server_imgur.js"
+  },
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
