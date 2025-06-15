@@ -43,7 +43,7 @@ app.post('/upload-image', async (req, res) => {
         '--single-process'
       ],
       ignoreDefaultArgs: ['--disable-extensions'],
-      product: 'chrome'
+      product: 'chromium'
     });
       
       const page = await browser.newPage();
