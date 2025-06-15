@@ -1,3 +1,4 @@
+import { executablePath } from 'puppeteer';
 import express from 'express';
 import puppeteer from 'puppeteer';
 import imgur from 'imgur';
@@ -6,6 +7,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 
+console.log('✅ Puppeteer default Chrome path:', executablePath());
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
