@@ -33,9 +33,9 @@ app.post('/upload-image', async (req, res) => {
     // const browser = await puppeteer.launch({ headless: true });
     // const page = await browser.newPage();
     const browser = await puppeteer.launch({
-      executablePath: '/home/node/.cache/puppeteer/chrome/linux-137.0.7151.70/chrome-linux64/chrome',
-      headless: false,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
+      executablePath: executablePath(),
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
       
       const page = await browser.newPage();
